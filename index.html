@@ -66,8 +66,8 @@
     Header
   ============================-->
     <header id="header">
-        <div class="container">
 
+        <div class="box">
             <div id="logo" class="logo">
                 <a href="#body" class="logo pull-left">InvenSoftware</a>
                 <!-- Uncomment below if you prefer to use an image logo -->
@@ -98,21 +98,24 @@
     <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-interval="10000">
-                <img src="img/carousel1.png" class="d-block w-100" alt="...">
+                <img src="img/Carousel1.jpg" class="d-block w-100" alt="...">
+                <div class="grid-container">
+                </div>
             </div>
-            <div class="carousel-item" data-interval="2000">
-                <img src="img/carousel2.png" class="d-block w-100" alt="...">
+            <!--
+                <div class="carousel-item" data-interval="2000">
+                <img src="img/Carousel1.jpg" class="d-block w-100" alt="...">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <h4>Second slide label</h4>
             </div>
-            <div class="carousel-item" data-interval="2000">
-                <img src="img/carousel3.png" class="d-block w-100" alt="...">
-            </div>
+            -->
         </div>
         <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <i class="fas fa-angle-left fa-lg" style="color: #ffffffb2;" id="flechas"></i>
             <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <i class="fas fa-angle-right fa-lg" style="color: #ffffffb2;" id="flechas"></i>
             <span class="sr-only">Next</span>
         </a>
     </div>
@@ -182,11 +185,13 @@
     <!-- SOPORTE -->
     <div class="soporte">
         <div class="container">
-            <h1 class="subtitle ">NUESTRO SOPORTE</h1>
-            <hr class="hr">
-            <h3 class="subtitle-text pb-5">Tenemos más de 10 años atendiendo clientes en todo el Pais,
-                brindandole soporte Presencial, Remoto y ofreciendole consultorías administrativa para optimizar su
-                gestión y tengan un negocio rentable.</h3>
+            <div class="titles">
+                <h1 class="subtitle ">NUESTRO SOPORTE</h1>
+                <hr class="hr">
+                <h3 class="subtitle-text pb-5">Tenemos más de 10 años atendiendo clientes en todo el Pais,
+                    brindandole soporte Presencial, Remoto y ofreciendole consultorías administrativa para optimizar su
+                    gestión y tengan un negocio rentable.</h3>
+            </div>
 
             <div class="box wow fadeInLeft">
                 <div class="row pt-5">
@@ -242,8 +247,7 @@
     <!-- ¿WHY? -->
     <div class="why">
         <div class="container">
-            <h1 class="text-center">¿POR QUÉ ELEGIR INVENSOFTWARE?</h1>
-            <h4 class="text-center">Software de Gestion</h4>
+            <h1 class="text-center">¿Por que elegir <span>InvenSoftware</span>?</h1>
 
             <div class="row pt-5">
                 <div class="col">
