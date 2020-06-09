@@ -393,84 +393,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
-# CAROUSEL
---------------------------------------------------------------*/
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "area1 area1 area2 area2" ". . . ." ". . . .";
-}
-
-.area1 {
-  grid-area: area1;
-}
-
-.area2 {
-  grid-area: area2;
-}
-
-.carousel-inner h1 {
-  color: #fff;
-  font-family: "Open Sans";
-  font-weight: 700;
-  font-size: 60px;
-
-  position: absolute;
-  top: 20%;
-  margin-left: 15%;
-}
-
-.carousel-inner hr {
-  background: white;
-  padding: 1px;
-}
-
-.carousel-inner h1 span {
-  color: #fff;
-  font-family: "Lato";
-  font-style: italic;
-  font-weight: 400;
-  font-size: 50px;
-
-  position: absolute;
-  width: 100%;
-  top: 80%;
-  margin-left: 0%;
-}
-
-.carousel .img-laptop {
-  position: absolute;
-  top: 15%;
-  width: 40%;
-}
-
-#flechas {
-  margin-bottom: 42%;
-}
-
-@media (max-width: 992px) {
-  .carousel-inner h1 {
-    font-size: 13px;
-
-    position: absolute;
-    top: 20%;
-    margin-left: 15%;
-  }
-
-  .carousel-inner h1 span {
-    font-size: 12px;
-
-    position: absolute;
-    width: 100%;
-    top: 80%;
-    margin-left: 0%;
-  }
-}
-
-/*--------------------------------------------------------------
 # SERVICIOS
 --------------------------------------------------------------*/
 
@@ -557,20 +479,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   .servicios .box {
     padding: 5%;
   }
-}
-
-/*--------------------------------------------------------------
-# DIVISION
---------------------------------------------------------------*/
-
-.division {
-  background: #fff;
-  padding: 10px;
-}
-
-.division hr {
-  background: #21d4fd;
-  padding: 1px;
 }
 
 /*--------------------------------------------------------------
@@ -700,7 +608,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 .why {
-  background-color: #b721ff ;
+  background-color: #b721ff;
   background-image: linear-gradient(19deg, #b721ff 0%, #21d4fd 100%);
   padding-top: 10%;
   padding-bottom: 10%;
@@ -759,3 +667,450 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 0%;
   }
 }
+
+/*--------------------------------------------------------------
+# DOWNLOAD
+--------------------------------------------------------------*/
+
+.download {
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.download h2 {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 36px;
+  color: black;
+}
+
+.download span {
+  font-family: "Space Bd Bt Bold";
+}
+
+.download p {
+  margin-top: 5%;
+  font-family: "Lato";
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.download a {
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  border: 0px;
+  border-radius: 15px 15px 15px 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: #fff;
+  transition: all .2s ease;
+}
+
+.download a:hover {
+  background-color: #b721ff;
+  background-image: linear-gradient(19deg, #b721ff 0%, #21d4fd 100%);
+  box-shadow: .1rem .3rem .5rem rgba(0, 0, 1, 0.8);
+}
+
+.download .card-img {
+  border: 0px;
+}
+
+@media (max-width: 992px) {
+
+  .download {
+    margin: 5%;
+  }
+
+  .download h2 {
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .download p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .download a {
+    margin-top: 10%;
+  }
+
+  .download .card-img {
+    margin-top: 10%;
+  }
+
+  .download .box {
+    text-align: center;
+  }
+
+}
+
+/*--------------------------------------------------------------
+# VIDEO
+--------------------------------------------------------------*/
+
+.video {
+	padding-top: 8rem;
+	padding-bottom: 6.75rem;
+	background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+	text-align: center;
+}
+
+
+.video .image-container {
+	margin-bottom: 2rem;
+}
+
+.video .image-container img {
+	border-radius: 0.75rem;
+}
+
+.video .video-wrapper {
+	position: relative;
+}
+
+.video h4 {
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+/* Video Play Button */
+.video .video-play-button {
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	display: block;
+	box-sizing: content-box;
+	width: 2rem;
+	height: 2.75rem;
+	padding: 1.125rem 1.25rem 1.125rem 1.75rem;
+	border-radius: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  transition: all .3s ease;
+}
+  
+.video .video-play-button:before {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	top: 50%;
+	left: 50%;
+	display: block;
+	width: 4.75rem;
+	height: 4.75rem;
+	border-radius: 50%;
+	background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+	animation: pulse-border 1500ms ease-out infinite;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+  
+.video .video-play-button span {
+	position: relative;
+	display: block;
+	z-index: 3;
+	top: 0.375rem;
+	left: 0.25rem;
+	width: 0;
+	height: 0;
+	border-left: 1.625rem solid #fff;
+	border-top: 1rem solid transparent;
+	border-bottom: 1rem solid transparent;
+}
+
+.video .video-play-button:hover {
+  border: 0px;
+  box-shadow: 1rem 1rem 8rem #b721ff;
+  background-color: #b721ff;
+  background-image: linear-gradient(19deg, #b721ff 0%, #21d4fd 100%);
+}
+
+/*--------------------------------------------------------------
+# PRECIOS
+--------------------------------------------------------------*/
+
+.precios {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background: #fff;
+}
+
+.precios .subtitle {
+  font-size: 38px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: black;
+
+  margin-bottom: 2%;
+}
+
+.precios .subtitle-text {
+  font-family: "Lato";
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 22px;
+}
+
+.hr {
+  background: #21d4fd;
+  padding: 1px;
+  margin-right: 82%;
+}
+
+.precios .row {
+  margin-top: 5%;
+}
+
+.precios .card {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.precios .card-title {
+  padding-top: 10%;
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: #0fbcf9;
+  text-align: center;
+}
+
+.precios .price {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 58px;
+  color: #444444;
+  text-align: center;
+}
+
+.precios .price span {
+  font-size: 40px;
+}
+
+.precios .text-muted {
+  font-family: "Open Sans";
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.precios .card hr {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.precios ul li {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Lato";
+  padding-top: 5%;
+  list-style: none;
+}
+
+.precios ul i {
+  color: #0fbcf9;
+}
+
+.precios .btn {
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  border: 0px;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: #fff;
+  transition: all .2s ease;
+}
+
+.precios .btn:hover {
+  background-color: #b721ff;
+  background-image: linear-gradient(19deg, #b721ff 0%, #21d4fd 100%);
+  box-shadow: .1rem .3rem .5rem rgba(0, 0, 1, 0.8);
+}
+
+.precios .box {
+  transition: all .3s ease;
+}
+
+.precios .box:hover {
+  border: 0px;
+  box-shadow: 0rem 0.1rem 0.8rem black;
+}
+
+.precios .nota {
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 5%;
+  color: #444444;
+}
+
+@media (max-width: 992px) {
+  .precios .titles {
+    padding: 5%;
+  }
+
+  .precios .subtitle {
+    font-size: 24px;
+    margin-bottom: 5%;
+  }
+
+  .precios .subtitle-text {
+    font-size: 18px;
+  }
+
+  .precios .row {
+    padding: 5%;
+  }
+
+  .precios .card {
+    margin-bottom: 15%;
+  }
+
+  .precios .nota {
+    padding: 5%;
+    font-size: 16px;
+    margin-top: 0%;
+  }
+}
+
+/*--------------------------------------------------------------
+# CONTACTO
+--------------------------------------------------------------*/
+
+.contacto {
+  padding-top: 0%;
+  padding-bottom: 5%;
+}
+
+.contacto h1 {
+  font-size: 38px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: black;
+
+  margin-bottom: 2%;
+}
+
+.contacto .subtitle-text {
+  font-family: "Lato";
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 22px;
+}
+
+.hr {
+  background: #21d4fd;
+  padding: 1px;
+  margin-right: 82%;
+}
+
+.contacto button {
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  border: 0px;
+  border-radius: 40px 40px 40px 40px;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: #fff;
+  transition: all .2s ease;
+}
+
+.contacto button:hover {
+  background-color: #b721ff;
+  background-image: linear-gradient(19deg, #b721ff 0%, #21d4fd 100%);
+  box-shadow: .1rem .3rem .5rem rgba(0, 0, 1, 0.8);
+}
+
+@media (max-width: 992px) {
+  .contacto .titles {
+    padding: 5%;
+  }
+
+  .contacto .subtitle {
+    font-size: 24px;
+    margin-bottom: 5%;
+  }
+
+  .contacto .subtitle-text {
+    font-size: 18px;
+  }
+
+  .contacto button {
+    margin-bottom: 10%;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# FOOTER
+--------------------------------------------------------------*/
+
+.footer {
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+}
+
+.footer .row {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.footer .text1 {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.footer .text2 {
+  font-family: "Lato";
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 5%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
