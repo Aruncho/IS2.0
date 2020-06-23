@@ -330,11 +330,11 @@ body {
   z-index: 99;
   padding: 15px;
   cursor: pointer;
-  color: #fff;
+  color: #1e272e;
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: rgb(225, 225, 225);
+  color: #1e272e;
 }
 
 #mobile-nav ul .menu-item-active {
@@ -1095,22 +1095,3 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 5%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
